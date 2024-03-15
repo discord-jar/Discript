@@ -1,0 +1,7 @@
+@login with env:TOKEN
+
+on MESSAGE_CREATE as event:
+    log(str(event.author.username))
+
+on INTERACTION_CREATE as event:
+    event.reply("hi 💀").run()
