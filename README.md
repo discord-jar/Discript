@@ -19,3 +19,6 @@ following as an indented section.
 A full list of event names can be found on Discord's developer documentation: https://discord.com/developers/docs/topics/gateway-events#event-names
 <br><br>
 When defining an event listener with something like `on MESSAGE_CREATE as event`, the event variable, in this case `event`, is an object with the same structure as the raw JSON provided by Discord. For example, if you wanted to then print the author of a message's username, you'd write: `log(event.author.username)`
+
+## Compatibility
+Discript supports all events that discord.jar does (keep in mind, that's not all of them currently), but will support things like specfiic variables of an event DESPITE if it's implemented in discord.jar or not.
